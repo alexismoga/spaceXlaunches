@@ -1,4 +1,4 @@
-const API_URL = "https://api.spacexdata.com/v5/launches/"
+const API_URL = "https://api.spacexdata.com/v4/launches/"
 
 export async function getAllLaunches(){
     try{

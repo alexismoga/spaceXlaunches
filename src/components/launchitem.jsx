@@ -1,6 +1,7 @@
 import dayjs from "dayjs"
 import { Box, Flex, Text, Spacer, Tag, Button} from '@chakra-ui/react'
 import { FcCalendar } from "react-icons/fc";
+import {Link} from 'react-router-dom'
 import "dayjs/locale/es"
 
 export function LaunchItem(launch) {
@@ -28,8 +29,10 @@ export function LaunchItem(launch) {
                 .format("D MMMM, YYYY")}
             </Text>
           </Flex>
-        <Button size='xs' colorScheme='pink'>
-          View details</Button>
-        </Box>
+        <Link to={`/launch/${launch.flight_number}`}>
+          <Button size='xs' colorScheme='pink'>
+            View details</Button>
+        </Link>
+      </Box>
     )
 }
