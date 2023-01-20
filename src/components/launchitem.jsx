@@ -4,6 +4,7 @@ import { FcCalendar } from "react-icons/fc";
 import {Link} from 'react-router-dom'
 import "dayjs/locale/es"
 
+
 export function LaunchItem(launch) {
     return (
         <Box     
@@ -29,7 +30,7 @@ export function LaunchItem(launch) {
                 .format("D MMMM, YYYY")}
             </Text>
           </Flex>
-        <Link to={`/launch/${launch.flight_number}`}>
+        <Link to={`/launch/${launch.id}`}>
           <Button size='xs' colorScheme='pink'>
             View details</Button>
         </Link>

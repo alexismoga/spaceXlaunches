@@ -19,7 +19,7 @@ export function LaunchList(){
 
         <section>
         {launches.map(launch => (
-            <LaunchItem key={launch.name} {...launch}/>  
+            <LaunchItem key={launch.id} {...launch}/>  
             ))}
         </section>
         
